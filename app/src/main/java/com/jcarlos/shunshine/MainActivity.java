@@ -9,7 +9,7 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().add(R.id.container, new BlankFragment()).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.container, new ForecastFragment()).commit();
         }
     }
 }
