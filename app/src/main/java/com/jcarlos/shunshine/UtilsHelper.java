@@ -54,10 +54,7 @@ public class UtilsHelper {
                     .build();
             InputStream inputStream = null;
             try {
-                String urlStr = builtUri.toString();
-                Log.d(LOG_TAG, urlStr);
-                URL url = new URL(urlStr);
-
+                URL url = new URL(builtUri.toString());
                 // Create the request to OpenWeatherMap, and open the connection
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");
